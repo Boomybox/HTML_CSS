@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Authentification form </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="_variables.scss">
+	<link rel="stylesheet" type="text/css" href="_bootswatch.scss">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="background-image: url(bokeh.jpg); background-size: cover">
+
+<div class="container text-center" style="margin-top: 60px; ">
+	<h2 class="text-warning" style="text-shadow: 7px 5px 10px black">Authentification</h2>
+</div>
+<div class="container form-flex" style="width: 450px;">
+	<div class="card container" >
+	  <div class="card-body" >
+	    <form data-bitwarden-watching="1">
+
+			  <fieldset>
+
+			    <legend>Log In</legend>
+			    <div class="form-group">
+			      <label for="exampleInputEmail1">Adresse e-mail</label>
+			      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entre ton e-mail">
+			      <small id="emailHelp" class="form-text text-muted">(Adresse e-mail utilisée lors de la création du compte)</small>
+			    </div>
+			    <div class="form-group">
+			      <label for="exampleInputPassword1">Mot de passe</label>
+			      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ton mot de passe">
+			    </div>
+			    
+			    <fieldset class="form-group">
+			      <div class="form-check">
+			        <label class="form-check-label">
+			          <input class="form-check-input" type="checkbox" value="" checked="">
+			          Remember me
+			        </label>
+			      </div>
+			    </fieldset>
+
+			    <button type="submit" class="btn btn-outline-primary">Log In</button>
+			    <a href="#"> Mot de passe oublié?</a>
+			  </fieldset>  
+			</form>
+		</div>
+	</div>	  
+	<br>
+	<div class="card container">
+	  <div class="card-body">
+	    <form data-bitwarden-watching="1" class="container" >
+
+			  <fieldset>
+
+			  	<div class="alert alert-secondary">
+					  <button type="button" class="close" data-dismiss="alert">&times;</button>
+					  <strong>Tu n'as pas de compte?</strong> <a href="#">Inscrit toi!</a>
+					</div>
+			  </fieldset>
+
+			</form>
+		</div>
+	</div>	
+</div>
+		
+
+</body>
+</html>
